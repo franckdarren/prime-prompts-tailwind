@@ -1,12 +1,194 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS</title>
+    <title>Prime Prompts Tailwind</title>
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet" />
 </head>
-<body>
-    
+
+<body class="h-full m-0 p-0 flex flex-col box-border font-['Roboto']">
+    <header class="w-full flex items-center justify-center min-h-[75px] border-solid border-b-[#cccccc] border-2 md:px-[20px] lg:px-[0] ">
+        <nav class="w-full max-w-[1120px] flex justify-between items-center py-0 px-[10px]">
+            <input type="checkbox" id="toggle" class="hidden" />
+            <div class="flex items-center gap-3.5">
+                <!-- Logo  -->
+                <div class="w-[106px] h-[42px]">
+                    <img src="assets/imgs/Logo.svg" alt="logo" />
+                </div>
+
+                <!-- Texte du logo  -->
+                <p class="flex items-center text-[22px] font-medium">PrimePrompts</p>
+            </div>
+
+            <!-- Menu hamburger -->
+            <label for="toggle" class="navbar-toggler grid min-h-min cursor-pointer my-auto md:hidden">
+                <span class="bar w-[40px] h-[5px] mb-[10px] bg-black rounded-[10%] duration-400"></span>
+                <span class="bar w-[40px] h-[5px] mb-[10px] bg-black rounded-[10%] duration-400"></span>
+                <span class="bar w-[40px] h-[5px]  bg-black rounded-[10%] duration-400"></span>
+            </label>
+            <div
+                class="nav-btn-group hidden gap-5 md:flex w-full bg-white">
+                <!-- Boutton1 -->
+                <button
+                    class="mx-auto p-[10px] text-[18px] border-0 rounded-[10px] cursor-pointer font-normal bg-transparent hover:bg-[#dddddd]">Connexion</button>
+
+                <!-- Boutton2 -->
+                <button
+                    class="mx-auto p-[10px] text-[18px] border-0 rounded-[10px] cursor-pointer bg-[#000000] font-normal text-white hover:bg-[#000000]/60">Essayer
+                    PrimePrompts</button>
+            </div>
+        </nav>
+    </header>
+    <div>
+        <section class="flex-1 flex justify-center">
+            <div class="w-full max-w-[1120px] flex flex-col items-center justify-around gap-[30px] pt-[20px] px-[10px] md:pb-[20px] lg:pb-[0]">
+                <div
+                    class="my-[10px] mx-auto h-auto md:h-auto lg:my-[0] lg:h-auto lg:my-0 lg:mx-auto flex flex-col items-center text-center gap-[24px]">
+                    <!-- Titre -->
+                    <div>
+                        <h1 class="text-center font-bold text-[42px] leading-[49.22px]">
+                            Organisez vos prompts IA <br />
+                            rapidement, efficacement.
+                        </h1>
+                    </div>
+
+                    <!-- Paragraphe -->
+                    <div>
+                        <p
+                            class="w-[80%] mx-auto text-center md:w-full font-normal text-[24px] leading-[28px] text-center">
+                            Une application simple pour gérer et retrouver <br />
+                            facilement vos prompts IA
+                        </p>
+                    </div>
+
+                    <!-- Boutton -->
+                    <button
+                        class="w-[212px] h-[41px] bg-[#1f84ef] rounded-[10px] my-0 mx-auto border-0 text-white text-[18px] font-normal hover:bg-[#1f84ef]/80">Essayer
+                        PrimePrompts</button>
+                </div>
+                <div class="mb-[20px] w-full grid gap-[16px] md:grid-cols-2 md:w-[80%] md:gap-[5%] lg:w-full lg:gap-[16px] md:items-center lg:grid-cols-3">
+                    <div class="flex flex-col p-[20px] gap-[20px] rounded-[10px] bg-[#e4073c]">
+                        <!-- Icone -->
+                        <div>
+                            <img src="assets/imgs/Icon.svg" alt="Icone" class="w-[54px] h-[55px]" />
+                        </div>
+
+                        <!-- Titre -->
+                        <div class="font-medium text-[22px] text-white">
+                            <p>Ajout de Prompts</p>
+                        </div>
+
+                        <!-- Paragraphe -->
+                        <div class="font-medium text-[14px] leading-[16px] text-white">
+                            <p>
+                                Ajoutez de nouveaux prompts à votre<br />
+                                collection en quelques clics.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-[20px] gap-[20px] rounded-[10px] bg-[#ffd200]">
+                        <!-- Icone -->
+                        <div>
+                            <img src="assets/imgs/Icon2.svg" alt="Icone" class="w-[54px] h-[55px]" />
+                        </div>
+
+                        <!-- Titre -->
+                        <div class="font-medium text-[22px] text-white">
+                            <p>Classer par Catégorie</p>
+                        </div>
+
+                        <!-- Paragraphe -->
+                        <div class="font-medium text-[14px] leading-[16px] text-white">
+                            <p>
+                                Organisez les prompts en différentes<br />
+                                catégories pour une gestion facile.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-[20px] gap-[20px] rounded-[10px] bg-[#06e07f]">
+                        <!-- Icone -->
+                        <div>
+                            <img src="assets/imgs/Icon3.svg" alt="Icone" class="w-[54px] h-[55px]" />
+                        </div>
+
+                        <!-- Titre -->
+                        <div class="font-medium text-[22px] text-white">
+                            <p>Gérer les Prompts</p>
+                        </div>
+
+                        <!-- Paragraphe -->
+                        <div class="font-medium text-[14px] leading-[16px] text-white">
+                            <p>
+                                Recherchez des prompts spécifiques,<br />
+                                modifiez ou supprimez-les.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="grid md:flex md:px-[50px] items-center w-full justify-center lg:h-[150px] bg-black items-center">
+            <div class="grid w-full max-w-[1120px] md:flex lg:flex md:justify-between items-center py-0 px-[10px]">
+                <div class="grid lg:flex gap-[24px] my-[30px]">
+                    <!-- Lien1 -->
+                    <p class="text-white font-normal text-[18px] text-center">@2024 PrimePrompts Labs</p>
+
+                    <!-- Lien2 -->
+                    <p class="text-white font-normal text-[18px] text-center"><a href="#"
+                            class="text-white no-underline">Mentions légales</a></p>
+
+                    <!-- Lien3 -->
+                    <p class="text-white font-normal text-[18px] text-center"><a href="#"
+                            class="text-white no-underline">Politique de confidentialité</a></p>
+                </div>
+                <div class="mb-[30px] md:mb-[0] flex flex-col gap-[20px] py-[5] px-0">
+                    <div class="flex gap-[14px] items-center">
+                        <!-- image logo -->
+                        <div>
+                            <img src="assets/imgs/Logo.svg" alt="logo" class="w-[106px] h-[42px]" />
+                        </div>
+
+                        <!-- texte logo -->
+                        <div class="w-[141px] h-[40px] flex items-center text-white text-[22px] font-medium">
+                            <p>PrimePrompts</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-[42px]">
+                        <!-- Icone 1 -->
+                        <div class="w-[24px] h-[25px]">
+                            <img src="assets/imgs/Twitter.png" alt="twitter" />
+                        </div>
+
+                        <!-- Icone 2 -->
+                        <div class="w-[24px] h-[25px]">
+                            <img src="assets/imgs/Instagram.png" alt="Instagram" />
+                        </div>
+
+                        <!-- Icone 3 -->
+                        <div class="w-[24px] h-[25px]">
+                            <img src="assets/imgs/LinkedIn.png" alt="linkedin" />
+                        </div>
+
+                        <!-- Icone 4 -->
+                        <div class="w-[24px] h-[25px]">
+                            <img src="assets/imgs/Facebook.png" alt="facebook" />
+                        </div>
+
+                        <!-- Icone 5 -->
+                        <div class="w-[24px] h-[25px]">
+                            <img src="assets/imgs/YouTube.png" alt="youtube" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 </body>
+
 </html>
